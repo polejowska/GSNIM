@@ -3,7 +3,7 @@ from website import db
 
 
 class Respondent(db.Model):
-    #__tablename__ = 'respondents'
+    __tablename__ = 'respondent'
     id = db.Column(
         db.Integer,
         primary_key=True
@@ -28,7 +28,7 @@ class Respondent(db.Model):
 
 
 class Question(db.Model):
-    #__tablename__ = 'questions'
+    __tablename__ = 'question'
     id = db.Column(
         db.Integer,
         primary_key=True,
@@ -45,7 +45,7 @@ class Question(db.Model):
 
 
 class Option(db.Model):
-    #__tablename__ = 'options'
+    __tablename__ = 'option'
     id = db.Column(
         db.Integer,
         primary_key=True,
@@ -69,7 +69,7 @@ class Option(db.Model):
 
 
 class Answer(db.Model):
-    #__tablename__ = 'answers'
+    __tablename__ = 'answer'
     respondent_id = db.Column(
         db.Integer,
         db.ForeignKey('respondent.id'),

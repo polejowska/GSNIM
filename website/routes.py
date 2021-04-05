@@ -7,9 +7,6 @@ import os
 TEMPLATE_DIR = os.path.abspath('../templates')
 STATIC_DIR = os.path.abspath('../static')
 
-con = sqlite3.connect('site.db')
-cur = con.cursor()
-
 # FETCH ALL QUESTIONS AND OPTIONS FROM DATABASE
 questions_objects_list = Question.query.all()
 options_objects_list = Option.query.all()
@@ -59,10 +56,20 @@ def question(id, respondent_id):
     return render_template('form.html', form=form, question=questions_objects_list[id-1].text)
 
 
-@app.route("/end", methods=['GET', 'POST'])
+@app.route("/end/<int:respondent_id>", methods=['GET', 'POST'])
 def end(respondent_id):
-    sumup_respondent_answers = Answer.query.get(respondent_id)
+    respondents = Respondent.query.all()
+    women_count = 0
+    men_count = 0
+
+    for respondent in respondents:
+        if respondent.gender == 1:
+            women_count = women_count + 1
+        if respondent.gender == 2:
+            men_count = men_count + 1
+    sumup_respondent_answers = Answer.query.filter_by(respondent_id=respondent_id)
     respondents = Respondent.query.order_by(Respondent.id)
     answers = Answer.query.order_by(Answer.respondent_id)
-    return render_template('end.html', answers=sumup_respondent_answers, number=len(list(respondents)))
+    return render_template('end.html', answers=sumup_respondent_answers,
+                            women_count=women_count, men_count=men_count, number=len(list(respondents)))
 
