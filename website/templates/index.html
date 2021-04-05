@@ -1,0 +1,87 @@
+{% extends "base.html" %}
+{% block title %} Witaj na stronie ankiety! {% endblock %}
+
+{% block content %}
+<header>
+    <div>
+        <div class="bg-dark p-4 toggle-brand">
+            <h5 class="text-white h5"> Ankieta realizowana w ramach projektu z przedmiotu: <br> Rozwój aplikacji internetowych w medycynie <br> Hurtownie i eksploracja danych </h5>
+            <span class="text-muted"> Realizacja: Natalia Rucińska, Agata Polejowska </span>
+        </div>
+    </div>
+    <nav class="navbar sticky-top navbar-dark bg-dark" id="my-navbar">
+        <div class="container-fluid">
+            <a href="#" data-bs-toggle="collapse" data-bs-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent" aria-expanded="false" aria-label="Toggle navigation">
+                <h5 class="text-white brand-heading h5"> Gotowość społeczeństwa na innowacyjne technologie w medycynie </h5>
+            </a>
+        </div>
+    </nav>
+</header>
+<main>
+
+<form method="POST" action="">
+    {{ entrance_form.hidden_tag() }}     
+    <div class="container align-middle mt-3">  
+        <hr>
+        <p> Serdecznie dziękujemy za chęć wypełnienia ankiety. <br> 
+            Ankieta jest bezimienna. Zgromadzone dane zostaną wykorzystane jedynie w celach 
+            naukowych. 
+        </p>
+        <hr>
+            <div class="form-group mx-auto row mt-5">
+                {{ entrance_form.age.label(class="col-2 col-form-label") }}
+                <div class="col-4">
+                    {% if entrance_form.age.errors %}
+                        {{ entrance_form.age(class="form-control form-control-lg is-invalid") }}
+                        <div class="invalid-feedback">
+                            {% for error in entrance_form.age.errors %}
+                                <span> {{ error }} </span>
+                            {% endfor %}
+                        </div>
+                    {% else %}
+                        {{ entrance_form.age(class="form-control")}}
+                    {% endif %}
+                </div>
+            </div>
+            <div class="form-group mx-auto row mt-5">
+                <label for="gender" class="col-2 col-form-label mx-auto"> Płeć </label>
+                <div class="col-10">
+                    {% if entrance_form.gender.errors %}
+                        {{ entrance_form.gender(class="is-invalid", style="list-style:none; padding: 10px;") }}
+                        <div class="invalid-feedback">
+                            {% for error in entrance_form.gender.errors %}
+                                <span> {{ error }} </span>
+                            {% endfor %}
+                        </div>
+                    {% else %}
+                        {{ entrance_form.gender(style="list-style:none; padding: 10px;")}}
+                    {% endif %}
+                </div>
+            </div>
+            <div class="form-group mx-auto row mt-5">
+                <label for="education" class="col-2 col-form-label mx-auto"> Wykształcenie medyczne </label>
+                <div class="col-10">
+                    {% if entrance_form.med_education.errors %}
+                        {{ entrance_form.med_education(class="is-invalid", style="list-style:none; padding: 10px;") }}
+                        <div class="invalid-feedback">
+                            {% for error in entrance_form.med_education.errors %}
+                                <span> {{ error }} </span>
+                            {% endfor %}
+                        </div>
+                    {% else %}
+                        {{ entrance_form.med_education(style="list-style:none; padding: 10px;")}}
+                    {% endif %}
+                </div>
+            </div>
+            <div class="d-flex justify-content-center mt-5 mb-5">
+                {{ entrance_form.submit(class="btn btn-success")}}
+            </div>
+            <hr>
+            <div class="d-flex justify-content-center mt-5 mb-5">
+                <button type="button" class="btn btn-primary"> Wyniki ankiety </button>
+            </div>
+            <hr>
+    </div>
+</form> 
+
+{% endblock %}

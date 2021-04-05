@@ -1,0 +1,48 @@
+{% extends 'base.html' %}
+{% block title %} Ankieta {% endblock %}
+
+{% block content %}
+<header>
+    <div class="collapse" id="navbarToggleExternalContent">
+        <div class="bg-dark p-4 toggle-brand">
+            <h5 class="text-white h5"> Ankieta realizowana w ramach projektu z przedmiotu: <br> Rozwój aplikacji internetowych w medycynie <br> Hurtownie i eksploracja danych </h5>
+            <span class="text-muted"> Realizacja: Natalia Rucińska, Agata Polejowska </span>
+        </div>
+    </div>
+    <nav class="navbar sticky-top navbar-dark bg-dark" id="my-navbar">
+        <div class="container-fluid">
+            <a href="#" data-bs-toggle="collapse" data-bs-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent" aria-expanded="false" aria-label="Toggle navigation">
+                <h5 class="text-white brand-heading h5"> Gotowość społeczeństwa na innowacyjne technologie w medycynie </h5>
+            </a>
+        </div>
+    </nav>
+</header>
+<main>
+
+<form method="POST" action="">
+    {{ form.hidden_tag() }}      
+    <div class="container align-middle mt-5">  
+        <div class="form-group mx-auto row mt-5">
+            <h5> {{ question }} </h5>
+        </div>
+            <div class="form-group mx-auto row mt-5">
+                <label for="question_options" class="col-2 col-form-label mx-auto"> Odpowiedź </label>
+                <div class="col-10">
+                    {% if form.question_options.errors %}
+                        {{ form.question_options(class="is-invalid", style="list-style:none; padding: 10px;") }}
+                        <div class="invalid-feedback">
+                            {% for error in form.question_options.errors %}
+                                <span> {{ error }} </span>
+                            {% endfor %}
+                        </div>
+                    {% else %}
+                        {{ form.question_options(style="list-style:none; padding: 10px;")}}
+                    {% endif %}
+                </div>
+            <div class="d-flex justify-content-center mt-5">
+                {{ form.submit(class="btn btn-success")}}
+            </div>
+    </div>
+</form> 
+
+{% endblock %}

@@ -1,0 +1,61 @@
+{% extends 'base.html' %}
+{% block title %} Podsumowanie {% endblock %}
+
+{% block content %}
+
+<header>
+    <nav class="navbar sticky-top navbar-dark bg-dark" id="my-navbar">
+        <div class="container-fluid">
+            <a href="/" data-bs-toggle="collapse" data-bs-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent" aria-expanded="false" aria-label="Toggle navigation">
+                <h5 class="text-white brand-heading h5"> Gotowość społeczeństwa na innowacyjne technologie w medycynie </h5>
+            </a>
+        </div>
+    </nav>
+</header>
+<main>
+
+<div class="container align-middle mt-5">  
+    <hr>
+    <p> Bardzo dziękujemy za pomoc w przeprowadzanym projekcie poprzez wypełnienie ankiety. <br> 
+        Podsumowanie oraz wizualizacje statystyk można sprawdzić poniżej.
+    </p>
+    <hr>
+</div>
+
+<div class="container align-middle mt-5"> 
+
+    <h5> Informacje ogólne </h5>
+    <table class="table">
+        <thead class="thead-dark">
+          <tr>
+            <th scope="col">Liczba uczestników ankiety</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td> {{ number }}</td>
+          </tr>
+        </tbody>
+    </table>
+
+    <h5> Podsumowanie Pan(i) odpowiedzi </h5>
+    <table class="table">
+        <thead class="thead-dark">
+          <tr>
+            <th scope="col">#</th>
+            <th scope="col">First</th>
+            <th scope="col">Last</th>
+            <th scope="col">Handle</th>
+          </tr>
+        </thead>
+        <tbody>
+          {% for answer in answers %}
+          <tr>
+            <td> {{ answer.respondent_id }} </td>
+          </tr>
+          {% endfor %}
+        </tbody>
+      </table>
+      
+</div>
+{% endblock %}
