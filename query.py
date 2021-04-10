@@ -37,7 +37,10 @@ answers = Answer.query.all()
 question_list = []
 answer_list = []
 
-for answer in answers:
-    if answer.respondent_id == respondent_id:
-        question_list.append(answer.question_assigned)
-        answer_list.append(answer)
+a = Answer.query.filter_by(respondent_id=1, question_id=1).first()
+o = Option.query.filter_by(question_id=1, number=2).first()
+
+o = Option.query.filter_by(question_id=1, number=(Answer.query.filter_by(respondent_id=1, question_id=1).first()).option_number).first()
+print(o.option_text)
+#print(o)
+#print(a)

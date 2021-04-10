@@ -1,7 +1,7 @@
 from flask import render_template, redirect, url_for, flash, request
 from website import app, db
 from website.forms import EntranceForm, Form
-from website.models import Respondent, Question, Option, Answer
+from website.models import Respondent, Question, Option, Answer, Experience, Fears, Knowledge
 import os
 
 TEMPLATE_DIR = os.path.abspath('../templates')
@@ -17,7 +17,10 @@ options_objects_list = Option.query.all()
 def home():
     entrance_form = EntranceForm()
     if entrance_form.validate_on_submit():
-        respondent = Respondent(age=entrance_form.age.data, gender=entrance_form.gender.data, med_education=entrance_form.med_education.data)
+        respondent = Respondent(age=entrance_form.age.data, gender=entrance_form.gender.data, 
+                                med_education=entrance_form.med_education.data,
+                                place=entrance_form.place.data
+                                )
         db.session.add(respondent)
         db.session.commit()
         if respondent.gender == 2:
@@ -58,7 +61,9 @@ def question(id, respondent_id):
 
 @app.route("/end/<int:respondent_id>", methods=['GET', 'POST'])
 def end(respondent_id):
+
     respondents = Respondent.query.all()
+
     women_count = 0
     men_count = 0
 
@@ -67,9 +72,53 @@ def end(respondent_id):
             women_count = women_count + 1
         if respondent.gender == 2:
             men_count = men_count + 1
-    sumup_respondent_answers = Answer.query.filter_by(respondent_id=respondent_id)
-    respondents = Respondent.query.order_by(Respondent.id)
-    answers = Answer.query.order_by(Answer.respondent_id)
-    return render_template('end.html', answers=sumup_respondent_answers,
-                            women_count=women_count, men_count=men_count, number=len(list(respondents)))
+
+    # TO DO
+
+    for id in range(1, 11):
+        if id == 1: 
+            db.session.add(
+                Experience(respondent_id=respondent_id,
+                 udzial_zaawansowane_badanie=(Option.query.filter_by(question_id=id, number=(Answer.query.filter_by(respondent_id=respondent_id, question_id=id).first()).option_number).first()).option_text,
+                 stosowanie_urzadzen = (Option.query.filter_by(question_id=id+1, number=(Answer.query.filter_by(respondent_id=respondent_id, question_id=id).first()).option_number).first()).option_text
+                 )
+            )
+            db.session.commit()
+        if id == 3:
+            db.session.add(
+                 Fears(respondent_id=respondent_id,
+                 wspomaganie_innowacji = (Option.query.filter_by(question_id=id, number=(Answer.query.filter_by(respondent_id=respondent_id, question_id=id).first()).option_number).first()).option_text,
+                 ai_zastapienie_lekarzy = (Option.query.filter_by(question_id=id+1, number=(Answer.query.filter_by(respondent_id=respondent_id, question_id=id+1).first()).option_number).first()).option_text,
+                 operacja_robot_chirurg = (Option.query.filter_by(question_id=id+2, number=(Answer.query.filter_by(respondent_id=respondent_id, question_id=id+2).first()).option_number).first()).option_text
+                 )
+            )
+            db.session.commit()
+        if id == 6:
+            db.session.add(
+                 Knowledge(respondent_id=respondent_id,
+                 predyspozycje_genetyczne = (Option.query.filter_by(question_id=id, number=(Answer.query.filter_by(respondent_id=respondent_id, question_id=id).first()).option_number).first()).option_text,
+                 swiadomosc_korzysci_ai = (Option.query.filter_by(question_id=id+1, number=(Answer.query.filter_by(respondent_id=respondent_id, question_id=id+1).first()).option_number).first()).option_text,
+                 liczba_daVinci = (Option.query.filter_by(question_id=id+2, number=(Answer.query.filter_by(respondent_id=respondent_id, question_id=id+2).first()).option_number).first()).option_text,
+                 przewidywanie_stan_zdrowia = (Option.query.filter_by(question_id=id+3, number=(Answer.query.filter_by(respondent_id=respondent_id, question_id=id+3).first()).option_number).first()).option_text,
+                 telemedycyna = (Option.query.filter_by(question_id=id+4, number=(Answer.query.filter_by(respondent_id=respondent_id, question_id=id+4).first()).option_number).first()).option_text
+                 )
+            )
+            db.session.commit()
+
+
+        
+
+
+    #o = (Option.query.filter_by(question_id=1, number=(Answer.query.filter_by(respondent_id=respondent_id, question_id=1).first()).option_number).first()).option_text
+    #o2 = (Option.query.filter_by(question_id=2, number=(Answer.query.filter_by(respondent_id=respondent_id, question_id=2).first()).option_number).first()).option_text
+
+    #experience = Experience(respondent_id=respondent_id, udzial_zaawansowane_badanie=o, stosowanie_urzadzen = o2)
+   
+    #db.session.add(experience)
+    db.session.commit()
+
+    return render_template('end.html',
+                            women_count=women_count, 
+                            men_count=men_count, 
+                            number=len(list(respondents)))
 

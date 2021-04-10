@@ -73,6 +73,21 @@
                     {% endif %}
                 </div>
             </div>
+            <div class="form-group mx-auto row mt-5">
+                <label for="place" class="col-2 col-form-label mx-auto"> Miejsce zamieszkania </label>
+                <div class="col-10">
+                    {% if entrance_form.place.errors %}
+                        {{ entrance_form.place(class="is-invalid", style="list-style:none; padding: 10px;") }}
+                        <div class="invalid-feedback">
+                            {% for error in entrance_form.place.errors %}
+                                <span> {{ error }} </span>
+                            {% endfor %}
+                        </div>
+                    {% else %}
+                        {{ entrance_form.place(style="list-style:none; padding: 10px;")}}
+                    {% endif %}
+                </div>
+            </div>
             <div class="d-flex justify-content-center mt-5 mb-5">
                 {{ entrance_form.submit(class="btn btn-success")}}
             </div>
