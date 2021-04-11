@@ -111,6 +111,9 @@ class Experience(db.Model):
         db.Text,
         nullable=True
     )
+    vr = db.Column(
+        db.Text
+    )
     
 
 class Fears(db.Model):
