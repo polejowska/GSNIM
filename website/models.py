@@ -139,6 +139,7 @@ class Fears(db.Model):
         nullable=True
     )
 
+
 class Knowledge(db.Model):
     __tablename__ = 'knowledge'
     id = db.Column(
@@ -166,6 +167,50 @@ class Knowledge(db.Model):
         nullable=True
     )
     telemedycyna = db.Column(
+        db.Text,
+        nullable=True
+    )
+
+
+class Expectations(db.Model):
+    __tablename__ = 'expectations'
+    id = db.Column(
+        db.Integer,
+        primary_key=True,
+        autoincrement=True
+    )
+    respondent_id = db.Column(
+        db.Integer
+    )
+    wieksza_zaplata_zabieg = db.Column(
+        db.Text,
+        nullable=True
+    )
+    leczenie_leki_genetyczne = db.Column(
+        db.Text,
+        nullable=True
+    )
+    ingerencja_geny= db.Column(
+        db.Text,
+        nullable=True
+    )
+    dane_czujniki_spersonalizowanie = db.Column(
+        db.Text,
+        nullable=True
+    )
+    opiekun_robot_czlowiek = db.Column(
+        db.Text,
+        nullable=True
+    )
+    koszulka_smart = db.Column(
+        db.Text,
+        nullable=True
+    )
+    tatuaz_smart = db.Column(
+        db.Text,
+        nullable=True
+    )
+    chip = db.Column(
         db.Text,
         nullable=True
     )

@@ -1,7 +1,7 @@
 from flask import render_template, redirect, url_for, flash, request
 from website import app, db
 from website.forms import EntranceForm, Form
-from website.models import Respondent, Question, Option, Answer, Experience, Fears, Knowledge
+from website.models import Respondent, Question, Option, Answer, Experience, Fears, Knowledge, Expectations
 import os
 
 TEMPLATE_DIR = os.path.abspath('../templates')
@@ -73,18 +73,17 @@ def end(respondent_id):
         if respondent.gender == 2:
             men_count = men_count + 1
 
-    # TO DO
-
-    for id in range(1, 11):
+    for id in range(1, 19):
         if id == 1: 
             db.session.add(
                 Experience(respondent_id=respondent_id,
                  udzial_zaawansowane_badanie=(Option.query.filter_by(question_id=id, number=(Answer.query.filter_by(respondent_id=respondent_id, question_id=id).first()).option_number).first()).option_text,
-                 stosowanie_urzadzen = (Option.query.filter_by(question_id=id+1, number=(Answer.query.filter_by(respondent_id=respondent_id, question_id=id).first()).option_number).first()).option_text
+                 stosowanie_urzadzen = (Option.query.filter_by(question_id=id+1, number=(Answer.query.filter_by(respondent_id=respondent_id, question_id=id+1).first()).option_number).first()).option_text,
+                 vr = (Option.query.filter_by(question_id=id+2, number=(Answer.query.filter_by(respondent_id=respondent_id, question_id=id+2).first()).option_number).first()).option_text
                  )
             )
             db.session.commit()
-        if id == 3:
+        if id == 4:
             db.session.add(
                  Fears(respondent_id=respondent_id,
                  wspomaganie_innowacji = (Option.query.filter_by(question_id=id, number=(Answer.query.filter_by(respondent_id=respondent_id, question_id=id).first()).option_number).first()).option_text,
@@ -93,7 +92,7 @@ def end(respondent_id):
                  )
             )
             db.session.commit()
-        if id == 6:
+        if id == 7:
             db.session.add(
                  Knowledge(respondent_id=respondent_id,
                  predyspozycje_genetyczne = (Option.query.filter_by(question_id=id, number=(Answer.query.filter_by(respondent_id=respondent_id, question_id=id).first()).option_number).first()).option_text,
@@ -104,17 +103,21 @@ def end(respondent_id):
                  )
             )
             db.session.commit()
+        if id == 11:
+            db.session.add(
+                 Expectations(respondent_id=respondent_id,
+                 wieksza_zaplata_zabieg = (Option.query.filter_by(question_id=id, number=(Answer.query.filter_by(respondent_id=respondent_id, question_id=id).first()).option_number).first()).option_text,
+                 leczenie_leki_genetyczne = (Option.query.filter_by(question_id=id+1, number=(Answer.query.filter_by(respondent_id=respondent_id, question_id=id+1).first()).option_number).first()).option_text,
+                 ingerencja_geny = (Option.query.filter_by(question_id=id+2, number=(Answer.query.filter_by(respondent_id=respondent_id, question_id=id+2).first()).option_number).first()).option_text,
+                 dane_czujniki_spersonalizowanie = (Option.query.filter_by(question_id=id+3, number=(Answer.query.filter_by(respondent_id=respondent_id, question_id=id+3).first()).option_number).first()).option_text,
+                 opiekun_robot_czlowiek = (Option.query.filter_by(question_id=id+4, number=(Answer.query.filter_by(respondent_id=respondent_id, question_id=id+4).first()).option_number).first()).option_text,
+                 koszulka_smart = (Option.query.filter_by(question_id=id+5, number=(Answer.query.filter_by(respondent_id=respondent_id, question_id=id+5).first()).option_number).first()).option_text,
+                 tatuaz_smart = (Option.query.filter_by(question_id=id+6, number=(Answer.query.filter_by(respondent_id=respondent_id, question_id=id+6).first()).option_number).first()).option_text,
+                 chip = (Option.query.filter_by(question_id=id+7, number=(Answer.query.filter_by(respondent_id=respondent_id, question_id=id+7).first()).option_number).first()).option_text
+                 )
+            )
+            db.session.commit()
 
-
-        
-
-
-    #o = (Option.query.filter_by(question_id=1, number=(Answer.query.filter_by(respondent_id=respondent_id, question_id=1).first()).option_number).first()).option_text
-    #o2 = (Option.query.filter_by(question_id=2, number=(Answer.query.filter_by(respondent_id=respondent_id, question_id=2).first()).option_number).first()).option_text
-
-    #experience = Experience(respondent_id=respondent_id, udzial_zaawansowane_badanie=o, stosowanie_urzadzen = o2)
-   
-    #db.session.add(experience)
     db.session.commit()
 
     return render_template('end.html',

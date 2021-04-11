@@ -7,7 +7,7 @@ from website.models import Respondent, Question, Option, Answer
 questions_options_experience = [
     ['Czy Pan(i) brała udział w badaniu lub zabiegu, w którym wykorzystywane były zaawansowane technologie? (Przykład: tomografia komputerowa, MRI, zabieg wykonywany z pomocą robota chrirugicznego)', ['Tak', 'Nie', 'Nie wiem']],
     ['Czy Pan(i) korzysta z urządzeń, aplikacji mobilnych lub innych oprogramowań związanych ze zdrowiem? (Przykład: smartwatch z funkcjami monitorującymi np. poziom stresu, jakość snu, aktywność fizyczną)', ['Tak', 'Nie']],
-    ['Czy Pan(i) kiedykolwiek korzystał z urządzeń wirtualnej rzeczywistości (VR)?', ['Tak', 'Nie']]
+    ['Czy Pan(i) kiedykolwiek korzystał(a) z urządzeń wirtualnej rzeczywistości (VR)?', ['Tak', 'Nie']]
 ]
 
 questions_options_fears = [
@@ -27,7 +27,7 @@ questions_options_knowledge = [
 questions_options_expectations = [
     ['Czy byłby/byłaby Pan(i) w stanie zapłacić więcej na badanie lub zabieg wykorzystujący nowsze, bardziej precyzyjne technologie czy pozostać przy sprawdzonych, obecnych technologiach?', ['Zapłacić więcej za nowsze, bardziej precyzyjne technologie', 'Pozostać przy sprawdzonych technologiach bez ponoszenia dodatkowych kosztów']],
     ['Czy byłby/byłaby Pana(i) gotowa w przypadku wymaganego leczenia na podjęcie leczenia substancjami, które zostały wytworzone według Pana(i) kodu genetycznego?', ['Tak', 'Nie']],
-    ['Czy skorzystałby/skorzystałaby Pan(i) z możliwości ingerencji w swój materiał genetyczny s lub swojego przyszłego dziecka w celu polepszenia swoich genów lub przekazania wybranych genów? Przy czym mając 100% pewności bezpieczeństwa takiego zabiegu.', ['Tak', 'Nie']],
+    ['Czy skorzystałby/skorzystałaby Pan(i) z możliwości ingerencji w swój materiał genetyczny lub w materiał genetyczny swojego przyszłego dziecka w celu polepszenia swoich genów lub przekazania wybranych genów? Przy czym mając 100% pewności bezpieczeństwa takiego zabiegu.', ['Tak', 'Nie']],
     ['Czy byłby/byłaby Pan(i) zainteresowany/a codziennym i ciągłym przekazywaniem danych o własnym zdrowiu przez odpowiednie czujniki, aby skorzystać ze spersonalizowanego leczenia?', ['Tak', 'Nie']],
     ['Będąc osobą wymagającą opieki chciałby/chciałaby Pan(i), aby rolę opiekuna pełnił ...', ['Spersonalizowany robot dostępny całodobowo posiadający wszystkie konieczne funkcjonalności', 'Człowiek']],
     ['Czy chciałaby/chciałaby Pan(i) nosić inteligentną koszulkę, która całodobowo rejestruje stan zdrowia przesyłając dane do odpowiedniego urządzenia (np. smartfona)?', ['Tak', 'Nie']],
@@ -232,6 +232,8 @@ db.session.add(q18)
 db.session.add(o18)
 db.session.add(o18_1)
 
+
+db.session.commit()
 
 # DYNAMIC DATA (EXAMPLE)
 
