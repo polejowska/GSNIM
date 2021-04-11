@@ -5,7 +5,7 @@ from website.models import Respondent, Question, Option, Answer
 
 
 questions_options_experience = [
-    ['Czy Pan(i) brała udział w badaniu lub zabiegu, w którym wykorzystywane były zaawansowane technologie? (Przykład: tomografia komputerowa, MRI, zabieg wykonywany z pomocą robota chrirugicznego)', ['Tak', 'Nie', 'Nie wiem']],
+    ['Czy Pan(i) brała udział w badaniu lub zabiegu, w którym wykorzystywane były zaawansowane technologie? (Przykład: tomografia komputerowa, MRI, zabieg wykonywany z pomocą robota chirugicznego)', ['Tak', 'Nie', 'Nie wiem']],
     ['Czy Pan(i) korzysta z urządzeń, aplikacji mobilnych lub innych oprogramowań związanych ze zdrowiem? (Przykład: smartwatch z funkcjami monitorującymi np. poziom stresu, jakość snu, aktywność fizyczną)', ['Tak', 'Nie']],
     ['Czy Pan(i) kiedykolwiek korzystał(a) z urządzeń wirtualnej rzeczywistości (VR)?', ['Tak', 'Nie']]
 ]
