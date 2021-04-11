@@ -23,9 +23,8 @@
 </div>
 
 <div class="container align-middle mt-5"> 
-
-    <h5> Informacje ogólne </h5>
-    <table class="table">
+    <h5 class="mb-5"> Informacje ogólne </h5>
+      <table class="table mb-5">
         <thead class="thead-dark">
           <tr>
             <th scope="col">Liczba uczestników ankiety</th>
@@ -41,9 +40,22 @@
           </tr>
         </tbody>
       </table>
-
-        
-
+      <table class="table">
+        <thead class="thead-dark">
+          <tr>
+            <th scope="col">Średni wiek uczestników ankiety</th>
+            <th scope="col">Maks. wiek</th>
+            <th scope="col">Min. wiek</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td> {{ age_average }}</td>
+            <td> {{ age_max }}</td>
+            <td> {{ age_min }}</td>
+          </tr>
+        </tbody>
+      </table>
 </div>
 <canvas id="myChart" width="400" height="200"></canvas> 
 

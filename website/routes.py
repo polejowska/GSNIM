@@ -11,12 +11,14 @@ STATIC_DIR = os.path.abspath('../static')
 questions_objects_list = Question.query.all()
 options_objects_list = Option.query.all()
 
+submit_flag = False
 
 @app.route("/", methods=['GET', 'POST'])
 @app.route("/home", methods=['GET', 'POST'])
 def home():
     entrance_form = EntranceForm()
-    if entrance_form.validate_on_submit():
+
+    if entrance_form.validate_on_submit() and not submit_flag:         
         respondent = Respondent(age=entrance_form.age.data, gender=entrance_form.gender.data, 
                                 med_education=entrance_form.med_education.data,
                                 place=entrance_form.place.data
@@ -63,17 +65,28 @@ def question(id, respondent_id):
 def end(respondent_id):
 
     respondents = Respondent.query.all()
+    age_list = []
 
     women_count = 0
     men_count = 0
 
+    age_min = 0
+    age_max = 0
+    age_total = 0
+
     for respondent in respondents:
+        age_list.append(respondent.age)
+        age_total += respondent.age
         if respondent.gender == 1:
             women_count = women_count + 1
         if respondent.gender == 2:
             men_count = men_count + 1
 
-    for id in range(1, 19):
+    age_average = age_total/len(respondents)
+    age_min = min(age_list)
+    age_max = max(age_list)
+
+    for id in range(1, 21):
         if id == 1: 
             db.session.add(
                 Experience(respondent_id=respondent_id,
@@ -103,7 +116,7 @@ def end(respondent_id):
                  )
             )
             db.session.commit()
-        if id == 11:
+        if id == 12:
             db.session.add(
                  Expectations(respondent_id=respondent_id,
                  wieksza_zaplata_zabieg = (Option.query.filter_by(question_id=id, number=(Answer.query.filter_by(respondent_id=respondent_id, question_id=id).first()).option_number).first()).option_text,
@@ -123,5 +136,13 @@ def end(respondent_id):
     return render_template('end.html',
                             women_count=women_count, 
                             men_count=men_count, 
-                            number=len(list(respondents)))
+                            number=len(list(respondents)),
+                            age_average=age_average,
+                            age_max=age_max,
+                            age_min=age_min
+                            )
 
+
+@app.route("/results", methods=['GET', 'POST'])
+def results():
+    return render_template('results.html')

@@ -92,11 +92,12 @@
                 {{ entrance_form.submit(class="btn btn-success")}}
             </div>
             <hr>
-            <div class="d-flex justify-content-center mt-5 mb-5">
-                <button type="button" class="btn btn-primary"> Wyniki ankiety </button>
-            </div>
-            <hr>
     </div>
 </form> 
+<form method="POST" action={{url_for('results')}}>
+    <div class="d-flex justify-content-center mt-5 mb-5">
+        <input type="submit" class="btn btn-primary" name="submit_button" value="Wyniki ankiety">
+    </div>
+</form>
 
 {% endblock %}
