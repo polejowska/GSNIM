@@ -17,8 +17,8 @@ questions_options_fears = [
 ]
 
 questions_options_knowledge = [
-    ['Czy byłby/byłaby Pan(i) zainteresowana badaniem predyspozycji genetycznych?', ['Tak', 'Nie']],
-    ['Czy jest Pan(i) świadomy korzyści jakie przynosi sztuczna inteligencja medycynie?', ['Tak', 'Nie']],
+    ['Czy byłby/byłaby Pan(i) zainteresowany/a badaniem predyspozycji genetycznych?', ['Tak', 'Nie']],
+    ['Czy jest Pan(i) świadomy/a korzyści jakie przynosi sztuczna inteligencja medycynie?', ['Tak', 'Nie']],
     ['Da Vinci jest zaawansowanym robotem medycznym, z użyciem tego systemu wykonano już ponad 7,2 mln operacji na świecie. Liczba aparatów da Vinci w Polsce wynosi ... (Stan na czerwiec 2020)', ['2 sztuki', 'około 10 sztuk', 'około 100 sztuk', 'około 1000 sztuk']],
     ['Czy uważa Pan(i), że sztuczna inteligencja potrafi przewidzieć stan zdrowia pacjenta na podstawie odpowiednich danych?', ['Tak', 'Nie']],
     ['Telemedycyna to rozwiązanie, które jest wykorzystywane:', ['Jako uzupełnienie tradycyjnych form opieki medycznej', 'Zamiast tradycyjnej opieki medycznej', 'Tylko ze względu na epidemię COVID-19']]
@@ -26,7 +26,7 @@ questions_options_knowledge = [
 
 questions_options_expectations = [
     ['Czy byłby/byłaby Pan(i) w stanie zapłacić więcej na badanie lub zabieg wykorzystujący nowsze, bardziej precyzyjne technologie czy pozostać przy sprawdzonych, obecnych technologiach?', ['Zapłacić więcej za nowsze, bardziej precyzyjne technologie', 'Pozostać przy sprawdzonych technologiach bez ponoszenia dodatkowych kosztów']],
-    ['Czy byłby/byłaby Pana(i) gotowa w przypadku wymaganego leczenia na podjęcie leczenia substancjami, które zostały wytworzone według Pana(i) kodu genetycznego?', ['Tak', 'Nie']],
+    ['Czy byłby/byłaby Pana(i) gotowy/a w przypadku wymaganego leczenia na podjęcie leczenia substancjami, które zostały wytworzone według Pana(i) kodu genetycznego?', ['Tak', 'Nie']],
     ['Czy skorzystałby/skorzystałaby Pan(i) z możliwości ingerencji w swój materiał genetyczny lub w materiał genetyczny swojego przyszłego dziecka w celu polepszenia swoich genów lub przekazania wybranych genów? Przy czym mając 100% pewności bezpieczeństwa takiego zabiegu.', ['Tak', 'Nie']],
     ['Czy byłby/byłaby Pan(i) zainteresowany/a codziennym i ciągłym przekazywaniem danych o własnym zdrowiu przez odpowiednie czujniki, aby skorzystać ze spersonalizowanego leczenia?', ['Tak', 'Nie']],
     ['Będąc osobą wymagającą opieki chciałby/chciałaby Pan(i), aby rolę opiekuna pełnił ...', ['Spersonalizowany robot dostępny całodobowo posiadający wszystkie konieczne funkcjonalności', 'Człowiek']],

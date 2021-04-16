@@ -26,3 +26,4 @@ class EntranceForm(FlaskForm):
 class Form(FlaskForm):
     question_options = RadioField('Odpowiedź', choices=[], validators=[DataRequired()], coerce=int)
     submit = SubmitField('Następne pytanie')
+
