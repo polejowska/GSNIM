@@ -90,12 +90,25 @@ def end(respondent_id):
         if id == 1: 
             db.session.add(
                 Experience(respondent_id=respondent_id,
-                 udzial_zaawansowane_badanie=(Option.query.filter_by(question_id=id, number=(Answer.query.filter_by(respondent_id=respondent_id, question_id=id).first()).option_number).first()).option_text,
-                 stosowanie_urzadzen = (Option.query.filter_by(question_id=id+1, number=(Answer.query.filter_by(respondent_id=respondent_id, question_id=id+1).first()).option_number).first()).option_text,
-                 vr = (Option.query.filter_by(question_id=id+2, number=(Answer.query.filter_by(respondent_id=respondent_id, question_id=id+2).first()).option_number).first()).option_text
+                 udzial_zaawansowane_badanie=(
+                     Option.query.filter_by(
+                         question_id=id, 
+                         number=(
+                             Answer.query.filter_by(
+                                 respondent_id=respondent_id, question_id=id).first()).option_number).first()).option_text,
+                 stosowanie_urzadzen = (
+                     Option.query.filter_by(
+                         question_id=id+1, number=(
+                             Answer.query.filter_by(
+                                 respondent_id=respondent_id, question_id=id+1).first()).option_number).first()).option_text,
+                 vr = (Option.query.filter_by(
+                     question_id=id+2, number=(
+                         Answer.query.filter_by(
+                             respondent_id=respondent_id, question_id=id+2).first()).option_number).first()).option_text
                  )
             )
             db.session.commit()
+            
         if id == 4:
             db.session.add(
                  Fears(respondent_id=respondent_id,
@@ -137,7 +150,7 @@ def end(respondent_id):
                             women_count=women_count, 
                             men_count=men_count, 
                             number=len(list(respondents)),
-                            age_average=age_average,
+                            age_average=round(age_average),
                             age_max=age_max,
                             age_min=age_min
                             )

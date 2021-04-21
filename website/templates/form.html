@@ -29,14 +29,14 @@
                 <label for="question_options" class="col-2 col-form-label mx-auto"> Odpowiedź </label>
                 <div class="col-10">
                     {% if form.question_options.errors %}
-                        {{ form.question_options(class="is-invalid", style="list-style:none; padding: 10px;") }}
+                        {{ form.question_options(class="is-invalid", style="list-style:none; padding: 10px; margin-left: 50px") }}
                         <div class="invalid-feedback">
                             {% for error in form.question_options.errors %}
                                 <span> {{ error }} </span>
                             {% endfor %}
                         </div>
                     {% else %}
-                        {{ form.question_options(style="list-style:none; padding: 10px;")}}
+                        {{ form.question_options(style="list-style:none; padding: 10px; margin-left: 50px;")}}
                     {% endif %}
                 </div>
             <div class="d-flex justify-content-center mt-5">
