@@ -32,3 +32,8 @@ a, a:link, a:visited
 {
     display: none;
 }
+
+.custom-color 
+{
+    background-color: black;
+}

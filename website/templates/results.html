@@ -20,9 +20,138 @@
 <main>
     <div class="container align-middle mt-5">  
         <hr>
-        <p> W tym miejscu w najbliższym czasie umieszczone zostaną wyniki ankiety po przeprowadzeniu procesu eksploracji danych z wykorzystaniem odpowiednich algorytmów.
+        <p> W tym miejscu znajdują się wyniki ankiety po przeprowadzeniu procesu eksploracji danych z wykorzystaniem odpowiednich algorytmów.
         </p>
         <hr>
+    </div>
+    <div class="container align-middle mt-5">
+        <hr>
+        <h5 class="mb-5"> Metoda K-Means </h5>
+        <table class="table mb-5">
+            <thead class="thead-dark">
+              <tr>
+                <th scope="col"></th>
+                <th scope="col">Grupa o najniższej gotowości</th>
+                <th scope="col">Grupa o średniej gotowości</th>
+                <th scope="col">Grupa o najwyższej gotowości</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <th scope="row">Liczba osób</th>
+                <td>45</td>
+                <td>20</td>
+                <td>31</td>
+              </tr>
+            </tbody>
+          </table>
+          <table class="table mb-5">
+            <thead class="thead-dark">
+              <tr>
+                <th scope="col"></th>
+                <th scope="col">Grupa o najniższej gotowości</th>
+                <th scope="col">Grupa o średniej gotowości</th>
+                <th scope="col">Grupa o najwyższej gotowości</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <th scope="row">Kobiety [%]</th>
+                <td>35.00</td>
+                <td>36.67</td>
+                <td>28.33</td>
+              </tr>
+              <tr>
+                <th scope="row">Mężczyźni [%]</th>
+                <td>33.33</td>
+                <td>19.44</td>
+                <td>47.22</td>
+              </tr>
+            </tbody>
+          </table>
+          <hr>
+          <h5 class="mb-5"> Metoda K-Means + PCA </h5>
+          <table class="table mb-5">
+            <thead class="thead-dark">
+              <tr>
+                <th scope="col"></th>
+                <th scope="col">Grupa o najniższej gotowości</th>
+                <th scope="col">Grupa o średniej/wysokiej gotowości</th>
+                <th scope="col">Grupa o najwyższej gotowości</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <th scope="row">Liczba osób</th>
+                <td>35</td>
+                <td>27</td>
+                <td>34</td>
+              </tr>
+            </tbody>
+          </table>
+          <table class="table mb-5">
+            <thead class="thead-dark">
+              <tr>
+                <th scope="col"></th>
+                <th scope="col">Grupa o najniższej gotowości</th>
+                <th scope="col">Grupa o średniej/wysokiej gotowości</th>
+                <th scope="col">Grupa o najwyższej gotowości</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <th scope="row">Kobiety [%]</th>
+                <td>21.67</td>
+                <td>21.67</td>
+                <td>56.67</td>
+              </tr>
+              <tr>
+                <th scope="row">Mężczyźni [%]</th>
+                <td>47.22</td>
+                <td>22.22</td>
+                <td>30.56</td>
+              </tr>
+            </tbody>
+          </table>
+          <hr>
+          <h5 class="mb-5"> Metoda PCA </h5>
+          <div class="list-group mb-5">
+            <a href="#" class="list-group-item list-group-item-action active custom-color" aria-current="true">
+              <div class="d-flex w-100 justify-content-between">
+                <h6 class="mb-1">Pytania mające największy wpływ na stopień gotowości na innowacje technologiczne w medycynie</h6>
+              </div>
+            </a>
+            <a href="#" class="list-group-item list-group-item-action">
+                <p class="mb-1">1. Czy jest Pan(i) świadomy/a korzyści jakie przynosi sztuczna inteligencja medycynie?</p>
+            </a>
+            <a href="#" class="list-group-item list-group-item-action">
+                <p class="mb-1">2. Czy byłby/byłaby Pana(i) gotowy/a w przypadku wymaganego leczenia na podjęcie leczenia substancjami, które zostały wytworzone według Pana(i) kodu genetycznego?</p>
+            </a>
+            <a href="#" class="list-group-item list-group-item-action">
+                <p class="mb-1">3. Czy Pan(i) korzysta z urządzeń, aplikacji mobilnych lub innych oprogramowań związanych ze zdrowiem? (Przykład: smartwatch z funkcjami monitorującymi np. poziom stresu, jakość snu, aktywność fizyczną)</p>
+            </a>
+            <a href="#" class="list-group-item list-group-item-action">
+                <p class="mb-1">4. Czy byłby/byłaby Pan(i) zainteresowany/a codziennym i ciągłym przekazywaniem danych o własnym zdrowiu przez odpowiednie czujniki, aby skorzystać ze spersonalizowanego leczenia?</p>
+            </a>
+            <a href="#" class="list-group-item list-group-item-action">
+                <p class="mb-1">5. W razie wymaganego zabiegu chirurgicznego byłby/byłaby Pan(i) w stanie być operowanym przez:</p>
+            </a>
+            <a href="#" class="list-group-item list-group-item-action">
+                <p class="mb-1">6. Telemedycyna to rozwiązanie, które jest wykorzystywane:</p>
+            </a>
+            <a href="#" class="list-group-item list-group-item-action">
+                <p class="mb-1">7. Będąc osobą wymagającą opieki chciałby/chciałaby Pan(i), aby rolę opiekuna pełnił ...</p>
+            </a>
+            <a href="#" class="list-group-item list-group-item-action">
+                <p class="mb-1">8. Czy Pan(i) byłby/byłaby w stanie wspomóc innowacje technologiczne związane ze zdrowiem poprzez anonimowe udostępnienie własnych danych medycznych? (np. zdjęcia rentgenowskie, przebiegi chorób, wyniki badań)</p>
+            </a>
+            <a href="#" class="list-group-item list-group-item-action">
+                <p class="mb-1">9. Czy chciałaby/chciałaby Pan(i) posiadać wszczepiony chip, który całodobowo rejestruje stan zdrowia przesyłając dane do odpowiedniego urządzenia (np. smartfona)?</p>
+            </a>
+            <a href="#" class="list-group-item list-group-item-action">
+                <p class="mb-1">10. Czy Pan(i) brała udział w badaniu lub zabiegu, w którym wykorzystywane były zaawansowane technologie? (Przykład: tomografia komputerowa, MRI, zabieg wykonywany z pomocą robota chirugicznego)</p>
+            </a>
+          </div>
     </div>
 </main>
 
