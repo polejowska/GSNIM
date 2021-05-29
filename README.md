@@ -1,4 +1,4 @@
-<img src="website/templates/img/ai.png" align="right" width="200">
+<img src="GSNIM - software/website/templates/img/ai.png" align="right" width="200">
 
 # Society readiness for innovative technologies in medicine - Survey
 

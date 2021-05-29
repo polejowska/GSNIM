@@ -1,0 +1,106 @@
+id,respondent_id,predyspozycje_genetyczne,swiadomosc_korzysci_ai,liczba_daVinci,przewidywanie_stan_zdrowia,telemedycyna
+1,3,Tak,Tak,około 100 sztuk,Tak,Tylko ze względu na epidemię COVID-19
+2,4,Tak,Tak,około 10 sztuk,Tak,Jako uzupełnienie tradycyjnych form opieki medycznej
+3,6,Tak,Tak,około 10 sztuk,Tak,Tylko ze względu na epidemię COVID-19
+4,7,Nie,Nie,około 10 sztuk,Nie,Zamiast tradycyjnej opieki medycznej
+5,9,Tak,Tak,około 10 sztuk,Tak,Tylko ze względu na epidemię COVID-19
+6,9,Tak,Tak,około 10 sztuk,Tak,Tylko ze względu na epidemię COVID-19
+7,9,Tak,Tak,około 10 sztuk,Tak,Tylko ze względu na epidemię COVID-19
+8,7,Nie,Nie,około 10 sztuk,Nie,Zamiast tradycyjnej opieki medycznej
+9,11,Tak,Tak,2 sztuki,Tak,Zamiast tradycyjnej opieki medycznej
+10,12,Nie,Nie,2 sztuki,Tak,Zamiast tradycyjnej opieki medycznej
+11,13,Tak,Nie,2 sztuki,Nie,Tylko ze względu na epidemię COVID-19
+12,15,Tak,Tak,2 sztuki,Tak,Zamiast tradycyjnej opieki medycznej
+13,16,Tak,Nie,około 10 sztuk,Nie,Zamiast tradycyjnej opieki medycznej
+14,17,Nie,Nie,około 1000 sztuk,Nie,Tylko ze względu na epidemię COVID-19
+15,18,Tak,Tak,około 10 sztuk,Tak,Jako uzupełnienie tradycyjnych form opieki medycznej
+16,19,Tak,Nie,2 sztuki,Nie,Zamiast tradycyjnej opieki medycznej
+17,20,Tak,Tak,około 10 sztuk,Tak,Tylko ze względu na epidemię COVID-19
+18,21,Tak,Tak,około 10 sztuk,Tak,Jako uzupełnienie tradycyjnych form opieki medycznej
+19,21,Tak,Tak,około 10 sztuk,Tak,Jako uzupełnienie tradycyjnych form opieki medycznej
+20,22,Tak,Tak,2 sztuki,Tak,Tylko ze względu na epidemię COVID-19
+21,23,Tak,Tak,około 10 sztuk,Tak,Tylko ze względu na epidemię COVID-19
+22,26,Tak,Tak,około 10 sztuk,Tak,Tylko ze względu na epidemię COVID-19
+23,24,Nie,Tak,około 10 sztuk,Tak,Jako uzupełnienie tradycyjnych form opieki medycznej
+24,27,Tak,Tak,2 sztuki,Tak,Jako uzupełnienie tradycyjnych form opieki medycznej
+25,35,Nie,Tak,2 sztuki,Tak,Jako uzupełnienie tradycyjnych form opieki medycznej
+26,36,Tak,Tak,2 sztuki,Nie,Tylko ze względu na epidemię COVID-19
+27,37,Tak,Tak,2 sztuki,Tak,Tylko ze względu na epidemię COVID-19
+28,39,Tak,Tak,około 10 sztuk,Tak,Jako uzupełnienie tradycyjnych form opieki medycznej
+29,40,Nie,Nie,2 sztuki,Tak,Tylko ze względu na epidemię COVID-19
+30,41,Tak,Tak,2 sztuki,Tak,Jako uzupełnienie tradycyjnych form opieki medycznej
+31,42,Tak,Tak,około 10 sztuk,Tak,Jako uzupełnienie tradycyjnych form opieki medycznej
+32,43,Tak,Tak,2 sztuki,Tak,Jako uzupełnienie tradycyjnych form opieki medycznej
+33,44,Nie,Tak,około 10 sztuk,Nie,Jako uzupełnienie tradycyjnych form opieki medycznej
+34,45,Tak,Tak,2 sztuki,Tak,Jako uzupełnienie tradycyjnych form opieki medycznej
+35,46,Tak,Nie,około 10 sztuk,Nie,Jako uzupełnienie tradycyjnych form opieki medycznej
+36,47,Nie,Nie,2 sztuki,Nie,Jako uzupełnienie tradycyjnych form opieki medycznej
+37,49,Tak,Tak,około 10 sztuk,Tak,Jako uzupełnienie tradycyjnych form opieki medycznej
+38,48,Nie,Nie,2 sztuki,Nie,Tylko ze względu na epidemię COVID-19
+39,51,Nie,Tak,około 10 sztuk,Tak,Jako uzupełnienie tradycyjnych form opieki medycznej
+40,52,Tak,Nie,2 sztuki,Tak,Tylko ze względu na epidemię COVID-19
+41,53,Tak,Nie,2 sztuki,Tak,Zamiast tradycyjnej opieki medycznej
+42,54,Nie,Tak,2 sztuki,Tak,Zamiast tradycyjnej opieki medycznej
+43,55,Nie,Nie,około 100 sztuk,Tak,Jako uzupełnienie tradycyjnych form opieki medycznej
+44,56,Tak,Nie,około 100 sztuk,Tak,Tylko ze względu na epidemię COVID-19
+45,58,Tak,Tak,około 10 sztuk,Tak,Jako uzupełnienie tradycyjnych form opieki medycznej
+46,60,Tak,Tak,2 sztuki,Tak,Jako uzupełnienie tradycyjnych form opieki medycznej
+47,63,Nie,Nie,2 sztuki,Tak,Tylko ze względu na epidemię COVID-19
+48,62,Nie,Tak,2 sztuki,Nie,Tylko ze względu na epidemię COVID-19
+49,66,Tak,Nie,2 sztuki,Tak,Tylko ze względu na epidemię COVID-19
+50,67,Tak,Tak,2 sztuki,Nie,Jako uzupełnienie tradycyjnych form opieki medycznej
+51,68,Tak,Tak,2 sztuki,Nie,Tylko ze względu na epidemię COVID-19
+52,70,Tak,Tak,około 10 sztuk,Tak,Jako uzupełnienie tradycyjnych form opieki medycznej
+53,72,Tak,Tak,około 10 sztuk,Tak,Tylko ze względu na epidemię COVID-19
+54,73,Tak,Tak,2 sztuki,Tak,Jako uzupełnienie tradycyjnych form opieki medycznej
+55,75,Tak,Tak,2 sztuki,Tak,Jako uzupełnienie tradycyjnych form opieki medycznej
+56,74,Tak,Tak,około 10 sztuk,Tak,Jako uzupełnienie tradycyjnych form opieki medycznej
+57,74,Tak,Tak,około 10 sztuk,Tak,Jako uzupełnienie tradycyjnych form opieki medycznej
+58,74,Tak,Tak,około 10 sztuk,Tak,Jako uzupełnienie tradycyjnych form opieki medycznej
+59,74,Tak,Tak,około 10 sztuk,Tak,Jako uzupełnienie tradycyjnych form opieki medycznej
+60,77,Tak,Tak,około 10 sztuk,Tak,Jako uzupełnienie tradycyjnych form opieki medycznej
+61,78,Tak,Tak,2 sztuki,Tak,Jako uzupełnienie tradycyjnych form opieki medycznej
+62,82,Nie,Tak,2 sztuki,Nie,Tylko ze względu na epidemię COVID-19
+63,83,Tak,Tak,2 sztuki,Tak,Jako uzupełnienie tradycyjnych form opieki medycznej
+64,85,Tak,Tak,około 10 sztuk,Tak,Jako uzupełnienie tradycyjnych form opieki medycznej
+65,80,Tak,Nie,2 sztuki,Tak,Jako uzupełnienie tradycyjnych form opieki medycznej
+66,79,Tak,Tak,2 sztuki,Tak,Jako uzupełnienie tradycyjnych form opieki medycznej
+67,87,Tak,Tak,około 10 sztuk,Tak,Tylko ze względu na epidemię COVID-19
+68,86,Nie,Nie,około 10 sztuk,Tak,Jako uzupełnienie tradycyjnych form opieki medycznej
+69,88,Tak,Tak,około 10 sztuk,Tak,Tylko ze względu na epidemię COVID-19
+70,89,Tak,Nie,2 sztuki,Tak,Zamiast tradycyjnej opieki medycznej
+71,90,Nie,Tak,2 sztuki,Nie,Jako uzupełnienie tradycyjnych form opieki medycznej
+72,91,Tak,Tak,2 sztuki,Tak,Jako uzupełnienie tradycyjnych form opieki medycznej
+73,92,Tak,Tak,około 10 sztuk,Tak,Jako uzupełnienie tradycyjnych form opieki medycznej
+74,93,Tak,Tak,około 10 sztuk,Tak,Jako uzupełnienie tradycyjnych form opieki medycznej
+75,94,Tak,Tak,około 10 sztuk,Tak,Jako uzupełnienie tradycyjnych form opieki medycznej
+76,95,Nie,Tak,około 10 sztuk,Tak,Jako uzupełnienie tradycyjnych form opieki medycznej
+77,96,Tak,Tak,2 sztuki,Tak,Zamiast tradycyjnej opieki medycznej
+78,98,Tak,Tak,około 100 sztuk,Tak,Jako uzupełnienie tradycyjnych form opieki medycznej
+79,97,Tak,Tak,2 sztuki,Tak,Jako uzupełnienie tradycyjnych form opieki medycznej
+80,97,Tak,Tak,2 sztuki,Tak,Jako uzupełnienie tradycyjnych form opieki medycznej
+81,99,Tak,Tak,2 sztuki,Tak,Jako uzupełnienie tradycyjnych form opieki medycznej
+82,100,Tak,Tak,około 10 sztuk,Tak,Jako uzupełnienie tradycyjnych form opieki medycznej
+83,101,Tak,Tak,2 sztuki,Tak,Jako uzupełnienie tradycyjnych form opieki medycznej
+84,102,Nie,Nie,2 sztuki,Tak,Jako uzupełnienie tradycyjnych form opieki medycznej
+85,103,Tak,Tak,2 sztuki,Nie,Jako uzupełnienie tradycyjnych form opieki medycznej
+86,105,Tak,Nie,około 100 sztuk,Tak,Tylko ze względu na epidemię COVID-19
+87,104,Tak,Tak,2 sztuki,Tak,Jako uzupełnienie tradycyjnych form opieki medycznej
+88,106,Tak,Tak,2 sztuki,Tak,Tylko ze względu na epidemię COVID-19
+89,107,Tak,Tak,2 sztuki,Tak,Jako uzupełnienie tradycyjnych form opieki medycznej
+90,108,Tak,Tak,około 10 sztuk,Nie,Jako uzupełnienie tradycyjnych form opieki medycznej
+91,110,Nie,Nie,2 sztuki,Nie,Jako uzupełnienie tradycyjnych form opieki medycznej
+92,111,Tak,Tak,około 10 sztuk,Tak,Jako uzupełnienie tradycyjnych form opieki medycznej
+93,112,Nie,Tak,około 10 sztuk,Tak,Jako uzupełnienie tradycyjnych form opieki medycznej
+94,113,Tak,Tak,2 sztuki,Tak,Jako uzupełnienie tradycyjnych form opieki medycznej
+95,114,Nie,Tak,około 10 sztuk,Tak,Jako uzupełnienie tradycyjnych form opieki medycznej
+96,115,Tak,Tak,około 10 sztuk,Tak,Jako uzupełnienie tradycyjnych form opieki medycznej
+97,116,Tak,Tak,około 10 sztuk,Tak,Jako uzupełnienie tradycyjnych form opieki medycznej
+98,117,Tak,Tak,około 10 sztuk,Tak,Jako uzupełnienie tradycyjnych form opieki medycznej
+99,118,Tak,Tak,2 sztuki,Tak,Jako uzupełnienie tradycyjnych form opieki medycznej
+100,119,Tak,Tak,2 sztuki,Tak,Jako uzupełnienie tradycyjnych form opieki medycznej
+101,120,Nie,Tak,2 sztuki,Nie,Jako uzupełnienie tradycyjnych form opieki medycznej
+102,121,Nie,Tak,2 sztuki,Tak,Jako uzupełnienie tradycyjnych form opieki medycznej
+103,122,Tak,Tak,2 sztuki,Tak,Jako uzupełnienie tradycyjnych form opieki medycznej
+104,123,Tak,Tak,2 sztuki,Nie,Jako uzupełnienie tradycyjnych form opieki medycznej
+105,123,Tak,Tak,2 sztuki,Nie,Jako uzupełnienie tradycyjnych form opieki medycznej

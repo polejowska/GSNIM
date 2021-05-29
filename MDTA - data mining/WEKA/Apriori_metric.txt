@@ -1,0 +1,69 @@
+=== Run information ===
+
+Scheme:       weka.associations.Apriori -N 20 -T 0 -C 0.5 -D 0.05 -U 1.0 -M 0.1 -S -1.0 -c -1
+Relation:     KMEANS_gotowosc_processed-weka.filters.unsupervised.attribute.NumericToNominal-Rfirst-last
+Instances:    96
+Attributes:   24
+              age
+              gender
+              place
+              wspomaganie_innowacji
+              ai_zastapienie_lekarzy
+              operacja_robot_chirurg
+              ingerencja_geny
+              dane_czujniki_spersonalizowanie
+              leczenie_leki_genetyczne
+              opiekun_robot_czlowiek
+              koszulka_smart
+              tatuaz_smart
+              chip
+              wieksza_zaplata_zabieg
+              stosowanie_urzadzen
+              udzial_zaawansowane_badanie
+              vr
+              predyspozycje_genetyczne
+              liczba_daVinci
+              przewidywanie_stan_zdrowia
+              swiadomosc_korzysci_ai
+              telemedycyna
+              age_bins
+              Gotowosc
+=== Associator model (full training set) ===
+
+
+Apriori
+=======
+
+Minimum support: 0.7 (67 instances)
+Minimum metric <confidence>: 0.5
+Number of cycles performed: 6
+
+Generated sets of large itemsets:
+
+Size of set of large itemsets L(1): 10
+
+Size of set of large itemsets L(2): 10
+
+Best rules found:
+
+ 1. ingerencja_geny=Tak 70 ==> leczenie_leki_genetyczne=Tak 67    <conf:(0.96)> lift:(1.11) lev:(0.07) [6] conv:(2.37)
+ 2. wspomaganie_innowacji=Tak 74 ==> wieksza_zaplata_zabieg=Zapłacić więcej za nowsze, bardziej precyzyjne technologie 70    <conf:(0.95)> lift:(1.07) lev:(0.05) [4] conv:(1.7)
+ 3. przewidywanie_stan_zdrowia=Tak 76 ==> leczenie_leki_genetyczne=Tak 71    <conf:(0.93)> lift:(1.08) lev:(0.06) [5] conv:(1.72)
+ 4. wspomaganie_innowacji=Tak 74 ==> leczenie_leki_genetyczne=Tak 69    <conf:(0.93)> lift:(1.08) lev:(0.05) [5] conv:(1.67)
+ 5. swiadomosc_korzysci_ai=Tak 74 ==> leczenie_leki_genetyczne=Tak 69    <conf:(0.93)> lift:(1.08) lev:(0.05) [5] conv:(1.67)
+ 6. leczenie_leki_genetyczne=Tak 83 ==> wieksza_zaplata_zabieg=Zapłacić więcej za nowsze, bardziej precyzyjne technologie 77    <conf:(0.93)> lift:(1.05) lev:(0.04) [3] conv:(1.36)
+ 7. przewidywanie_stan_zdrowia=Tak 76 ==> wieksza_zaplata_zabieg=Zapłacić więcej za nowsze, bardziej precyzyjne technologie 70    <conf:(0.92)> lift:(1.04) lev:(0.03) [2] conv:(1.24)
+ 8. dane_czujniki_spersonalizowanie=Tak 74 ==> leczenie_leki_genetyczne=Tak 68    <conf:(0.92)> lift:(1.06) lev:(0.04) [4] conv:(1.43)
+ 9. dane_czujniki_spersonalizowanie=Tak 74 ==> wieksza_zaplata_zabieg=Zapłacić więcej za nowsze, bardziej precyzyjne technologie 68    <conf:(0.92)> lift:(1.04) lev:(0.03) [2] conv:(1.21)
+10. wieksza_zaplata_zabieg=Zapłacić więcej za nowsze, bardziej precyzyjne technologie 85 ==> leczenie_leki_genetyczne=Tak 77    <conf:(0.91)> lift:(1.05) lev:(0.04) [3] conv:(1.28)
+11. swiadomosc_korzysci_ai=Tak 74 ==> wieksza_zaplata_zabieg=Zapłacić więcej za nowsze, bardziej precyzyjne technologie 67    <conf:(0.91)> lift:(1.02) lev:(0.02) [1] conv:(1.06)
+12. leczenie_leki_genetyczne=Tak 83 ==> przewidywanie_stan_zdrowia=Tak 71    <conf:(0.86)> lift:(1.08) lev:(0.06) [5] conv:(1.33)
+13. leczenie_leki_genetyczne=Tak 83 ==> wspomaganie_innowacji=Tak 69    <conf:(0.83)> lift:(1.08) lev:(0.05) [5] conv:(1.27)
+14. leczenie_leki_genetyczne=Tak 83 ==> swiadomosc_korzysci_ai=Tak 69    <conf:(0.83)> lift:(1.08) lev:(0.05) [5] conv:(1.27)
+15. wieksza_zaplata_zabieg=Zapłacić więcej za nowsze, bardziej precyzyjne technologie 85 ==> wspomaganie_innowacji=Tak 70    <conf:(0.82)> lift:(1.07) lev:(0.05) [4] conv:(1.22)
+16. wieksza_zaplata_zabieg=Zapłacić więcej za nowsze, bardziej precyzyjne technologie 85 ==> przewidywanie_stan_zdrowia=Tak 70    <conf:(0.82)> lift:(1.04) lev:(0.03) [2] conv:(1.11)
+17. leczenie_leki_genetyczne=Tak 83 ==> dane_czujniki_spersonalizowanie=Tak 68    <conf:(0.82)> lift:(1.06) lev:(0.04) [4] conv:(1.19)
+18. leczenie_leki_genetyczne=Tak 83 ==> ingerencja_geny=Tak 67    <conf:(0.81)> lift:(1.11) lev:(0.07) [6] conv:(1.32)
+19. wieksza_zaplata_zabieg=Zapłacić więcej za nowsze, bardziej precyzyjne technologie 85 ==> dane_czujniki_spersonalizowanie=Tak 68    <conf:(0.8)> lift:(1.04) lev:(0.03) [2] conv:(1.08)
+20. wieksza_zaplata_zabieg=Zapłacić więcej za nowsze, bardziej precyzyjne technologie 85 ==> swiadomosc_korzysci_ai=Tak 67    <conf:(0.79)> lift:(1.02) lev:(0.02) [1] conv:(1.03)
+

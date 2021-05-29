@@ -1,0 +1,106 @@
+id,respondent_id,wspomaganie_innowacji,ai_zastapienie_lekarzy,operacja_robot_chirurg
+1,3,Tak,Tak,Jedynie przez wykształconego chirurga
+2,4,Tak,Nie,Tylko przez robota medycznego (w przypadku 99% pewności jego prawidłowego działania)
+3,6,Tak,Nie,Tylko przez robota medycznego (w przypadku 99% pewności jego prawidłowego działania)
+4,7,Tak,Nie,Jedynie przez wykształconego chirurga
+5,9,Tak,Tak,Tylko przez robota medycznego (w przypadku 99% pewności jego prawidłowego działania)
+6,9,Tak,Tak,Tylko przez robota medycznego (w przypadku 99% pewności jego prawidłowego działania)
+7,9,Tak,Tak,Tylko przez robota medycznego (w przypadku 99% pewności jego prawidłowego działania)
+8,7,Tak,Nie,Jedynie przez wykształconego chirurga
+9,11,Tak,Tak,Jedynie przez wykształconego chirurga
+10,12,Tak,Tak,Jedynie przez wykształconego chirurga
+11,13,Tak,Nie,Jedynie przez wykształconego chirurga
+12,15,Tak,Tak,Jedynie przez wykształconego chirurga
+13,16,Tak,Nie,Jedynie przez wykształconego chirurga
+14,17,Nie,Nie,Jedynie przez wykształconego chirurga
+15,18,Tak,Tak,Tylko przez robota medycznego (w przypadku 99% pewności jego prawidłowego działania)
+16,19,Nie,Tak,Jedynie przez wykształconego chirurga
+17,20,Tak,Tak,Jedynie przez wykształconego chirurga
+18,21,Tak,Tak,Tylko przez robota medycznego (w przypadku 99% pewności jego prawidłowego działania)
+19,21,Tak,Tak,Tylko przez robota medycznego (w przypadku 99% pewności jego prawidłowego działania)
+20,22,Tak,Tak,Tylko przez robota medycznego (w przypadku 99% pewności jego prawidłowego działania)
+21,23,Nie,Nie,Tylko przez robota medycznego (w przypadku 99% pewności jego prawidłowego działania)
+22,26,Tak,Nie,Tylko przez robota medycznego (w przypadku 99% pewności jego prawidłowego działania)
+23,24,Tak,Nie,Tylko przez robota medycznego (w przypadku 99% pewności jego prawidłowego działania)
+24,27,Tak,Nie,Tylko przez robota medycznego (w przypadku 99% pewności jego prawidłowego działania)
+25,35,Nie,Nie,Jedynie przez wykształconego chirurga
+26,36,Tak,Tak,Tylko przez robota medycznego (w przypadku 99% pewności jego prawidłowego działania)
+27,37,Tak,Nie,Tylko przez robota medycznego (w przypadku 99% pewności jego prawidłowego działania)
+28,39,Tak,Tak,Tylko przez robota medycznego (w przypadku 99% pewności jego prawidłowego działania)
+29,40,Tak,Nie,Jedynie przez wykształconego chirurga
+30,41,Tak,Tak,Jedynie przez wykształconego chirurga
+31,42,Tak,Nie,Jedynie przez wykształconego chirurga
+32,43,Tak,Tak,Tylko przez robota medycznego (w przypadku 99% pewności jego prawidłowego działania)
+33,44,Tak,Nie,Tylko przez robota medycznego (w przypadku 99% pewności jego prawidłowego działania)
+34,45,Tak,Nie,Tylko przez robota medycznego (w przypadku 99% pewności jego prawidłowego działania)
+35,46,Tak,Nie,Jedynie przez wykształconego chirurga
+36,47,Nie,Tak,Jedynie przez wykształconego chirurga
+37,49,Tak,Tak,Tylko przez robota medycznego (w przypadku 99% pewności jego prawidłowego działania)
+38,48,Tak,Nie,Tylko przez robota medycznego (w przypadku 99% pewności jego prawidłowego działania)
+39,51,Tak,Nie,Tylko przez robota medycznego (w przypadku 99% pewności jego prawidłowego działania)
+40,52,Tak,Nie,Jedynie przez wykształconego chirurga
+41,53,Nie,Tak,Jedynie przez wykształconego chirurga
+42,54,Nie,Nie,Tylko przez robota medycznego (w przypadku 99% pewności jego prawidłowego działania)
+43,55,Tak,Tak,Jedynie przez wykształconego chirurga
+44,56,Tak,Nie,Jedynie przez wykształconego chirurga
+45,58,Tak,Nie,Tylko przez robota medycznego (w przypadku 99% pewności jego prawidłowego działania)
+46,60,Nie,Nie,Tylko przez robota medycznego (w przypadku 99% pewności jego prawidłowego działania)
+47,63,Nie,Tak,Jedynie przez wykształconego chirurga
+48,62,Nie,Nie,Jedynie przez wykształconego chirurga
+49,66,Nie,Nie,Tylko przez robota medycznego (w przypadku 99% pewności jego prawidłowego działania)
+50,67,Tak,Tak,Tylko przez robota medycznego (w przypadku 99% pewności jego prawidłowego działania)
+51,68,Tak,Tak,Tylko przez robota medycznego (w przypadku 99% pewności jego prawidłowego działania)
+52,70,Tak,Nie,Tylko przez robota medycznego (w przypadku 99% pewności jego prawidłowego działania)
+53,72,Tak,Nie,Tylko przez robota medycznego (w przypadku 99% pewności jego prawidłowego działania)
+54,73,Nie,Nie,Jedynie przez wykształconego chirurga
+55,75,Tak,Nie,Tylko przez robota medycznego (w przypadku 99% pewności jego prawidłowego działania)
+56,74,Tak,Nie,Tylko przez robota medycznego (w przypadku 99% pewności jego prawidłowego działania)
+57,74,Tak,Nie,Tylko przez robota medycznego (w przypadku 99% pewności jego prawidłowego działania)
+58,74,Tak,Nie,Tylko przez robota medycznego (w przypadku 99% pewności jego prawidłowego działania)
+59,74,Tak,Nie,Tylko przez robota medycznego (w przypadku 99% pewności jego prawidłowego działania)
+60,77,Nie,Nie,Jedynie przez wykształconego chirurga
+61,78,Tak,Nie,Tylko przez robota medycznego (w przypadku 99% pewności jego prawidłowego działania)
+62,82,Nie,Nie,Jedynie przez wykształconego chirurga
+63,83,Tak,Nie,Jedynie przez wykształconego chirurga
+64,85,Tak,Nie,Jedynie przez wykształconego chirurga
+65,80,Tak,Nie,Jedynie przez wykształconego chirurga
+66,79,Tak,Nie,Jedynie przez wykształconego chirurga
+67,87,Tak,Tak,Jedynie przez wykształconego chirurga
+68,86,Nie,Nie,Jedynie przez wykształconego chirurga
+69,88,Tak,Nie,Jedynie przez wykształconego chirurga
+70,89,Tak,Nie,Jedynie przez wykształconego chirurga
+71,90,Nie,Tak,Jedynie przez wykształconego chirurga
+72,91,Nie,Nie,Tylko przez robota medycznego (w przypadku 99% pewności jego prawidłowego działania)
+73,92,Nie,Nie,Jedynie przez wykształconego chirurga
+74,93,Nie,Tak,Tylko przez robota medycznego (w przypadku 99% pewności jego prawidłowego działania)
+75,94,Tak,Tak,Tylko przez robota medycznego (w przypadku 99% pewności jego prawidłowego działania)
+76,95,Tak,Tak,Jedynie przez wykształconego chirurga
+77,96,Tak,Tak,Tylko przez robota medycznego (w przypadku 99% pewności jego prawidłowego działania)
+78,98,Tak,Tak,Tylko przez robota medycznego (w przypadku 99% pewności jego prawidłowego działania)
+79,97,Tak,Tak,Tylko przez robota medycznego (w przypadku 99% pewności jego prawidłowego działania)
+80,97,Tak,Tak,Tylko przez robota medycznego (w przypadku 99% pewności jego prawidłowego działania)
+81,99,Tak,Nie,Tylko przez robota medycznego (w przypadku 99% pewności jego prawidłowego działania)
+82,100,Tak,Tak,Tylko przez robota medycznego (w przypadku 99% pewności jego prawidłowego działania)
+83,101,Tak,Tak,Tylko przez robota medycznego (w przypadku 99% pewności jego prawidłowego działania)
+84,102,Nie,Nie,Tylko przez robota medycznego (w przypadku 99% pewności jego prawidłowego działania)
+85,103,Tak,Nie,Tylko przez robota medycznego (w przypadku 99% pewności jego prawidłowego działania)
+86,105,Tak,Tak,Jedynie przez wykształconego chirurga
+87,104,Tak,Nie,Jedynie przez wykształconego chirurga
+88,106,Nie,Tak,Jedynie przez wykształconego chirurga
+89,107,Tak,Tak,Jedynie przez wykształconego chirurga
+90,108,Tak,Nie,Tylko przez robota medycznego (w przypadku 99% pewności jego prawidłowego działania)
+91,110,Nie,Nie,Tylko przez robota medycznego (w przypadku 99% pewności jego prawidłowego działania)
+92,111,Tak,Nie,Tylko przez robota medycznego (w przypadku 99% pewności jego prawidłowego działania)
+93,112,Tak,Nie,Jedynie przez wykształconego chirurga
+94,113,Tak,Nie,Jedynie przez wykształconego chirurga
+95,114,Tak,Nie,Tylko przez robota medycznego (w przypadku 99% pewności jego prawidłowego działania)
+96,115,Tak,Tak,Tylko przez robota medycznego (w przypadku 99% pewności jego prawidłowego działania)
+97,116,Tak,Tak,Jedynie przez wykształconego chirurga
+98,117,Tak,Tak,Tylko przez robota medycznego (w przypadku 99% pewności jego prawidłowego działania)
+99,118,Tak,Nie,Tylko przez robota medycznego (w przypadku 99% pewności jego prawidłowego działania)
+100,119,Tak,Nie,Tylko przez robota medycznego (w przypadku 99% pewności jego prawidłowego działania)
+101,120,Tak,Nie,Tylko przez robota medycznego (w przypadku 99% pewności jego prawidłowego działania)
+102,121,Tak,Tak,Tylko przez robota medycznego (w przypadku 99% pewności jego prawidłowego działania)
+103,122,Tak,Tak,Tylko przez robota medycznego (w przypadku 99% pewności jego prawidłowego działania)
+104,123,Tak,Nie,Tylko przez robota medycznego (w przypadku 99% pewności jego prawidłowego działania)
+105,123,Tak,Nie,Tylko przez robota medycznego (w przypadku 99% pewności jego prawidłowego działania)

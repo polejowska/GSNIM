@@ -1,0 +1,77 @@
+=== Run information ===
+
+Scheme:       weka.associations.Apriori -N 20 -T 0 -C 1.0 -D 0.05 -U 1.0 -M 0.1 -S -1.0 -c -1
+Relation:     KMEANS_gotowosc_processed-weka.filters.unsupervised.attribute.NumericToNominal-Rfirst-last
+Instances:    96
+Attributes:   24
+              age
+              gender
+              place
+              wspomaganie_innowacji
+              ai_zastapienie_lekarzy
+              operacja_robot_chirurg
+              ingerencja_geny
+              dane_czujniki_spersonalizowanie
+              leczenie_leki_genetyczne
+              opiekun_robot_czlowiek
+              koszulka_smart
+              tatuaz_smart
+              chip
+              wieksza_zaplata_zabieg
+              stosowanie_urzadzen
+              udzial_zaawansowane_badanie
+              vr
+              predyspozycje_genetyczne
+              liczba_daVinci
+              przewidywanie_stan_zdrowia
+              swiadomosc_korzysci_ai
+              telemedycyna
+              age_bins
+              Gotowosc
+=== Associator model (full training set) ===
+
+
+Apriori
+=======
+
+Minimum support: 0.45 (43 instances)
+Minimum metric <confidence>: 1
+Number of cycles performed: 11
+
+Generated sets of large itemsets:
+
+Size of set of large itemsets L(1): 24
+
+Size of set of large itemsets L(2): 123
+
+Size of set of large itemsets L(3): 215
+
+Size of set of large itemsets L(4): 189
+
+Size of set of large itemsets L(5): 71
+
+Size of set of large itemsets L(6): 10
+
+Best rules found:
+
+ 1. ingerencja_geny=Tak swiadomosc_korzysci_ai=Tak 57 ==> leczenie_leki_genetyczne=Tak 57    <conf:(1)> lift:(1.16) lev:(0.08) [7] conv:(7.72)
+ 2. ingerencja_geny=Tak wieksza_zaplata_zabieg=Zapłacić więcej za nowsze, bardziej precyzyjne technologie swiadomosc_korzysci_ai=Tak 53 ==> leczenie_leki_genetyczne=Tak 53    <conf:(1)> lift:(1.16) lev:(0.07) [7] conv:(7.18)
+ 3. ingerencja_geny=Tak przewidywanie_stan_zdrowia=Tak swiadomosc_korzysci_ai=Tak 51 ==> leczenie_leki_genetyczne=Tak 51    <conf:(1)> lift:(1.16) lev:(0.07) [6] conv:(6.91)
+ 4. ingerencja_geny=Tak stosowanie_urzadzen=Tak 49 ==> leczenie_leki_genetyczne=Tak 49    <conf:(1)> lift:(1.16) lev:(0.07) [6] conv:(6.64)
+ 5. ingerencja_geny=Tak dane_czujniki_spersonalizowanie=Tak swiadomosc_korzysci_ai=Tak 49 ==> leczenie_leki_genetyczne=Tak 49    <conf:(1)> lift:(1.16) lev:(0.07) [6] conv:(6.64)
+ 6. przewidywanie_stan_zdrowia=Tak swiadomosc_korzysci_ai=Tak age_bins=(17, 27] 49 ==> leczenie_leki_genetyczne=Tak 49    <conf:(1)> lift:(1.16) lev:(0.07) [6] conv:(6.64)
+ 7. wspomaganie_innowacji=Tak ingerencja_geny=Tak swiadomosc_korzysci_ai=Tak 48 ==> leczenie_leki_genetyczne=Tak 48    <conf:(1)> lift:(1.16) lev:(0.07) [6] conv:(6.5)
+ 8. ingerencja_geny=Tak wieksza_zaplata_zabieg=Zapłacić więcej za nowsze, bardziej precyzyjne technologie przewidywanie_stan_zdrowia=Tak swiadomosc_korzysci_ai=Tak 48 ==> leczenie_leki_genetyczne=Tak 48    <conf:(1)> lift:(1.16) lev:(0.07) [6] conv:(6.5)
+ 9. ingerencja_geny=Tak opiekun_robot_czlowiek=Spersonalizowany robot dostępny całodobowo posiadający wszystkie konieczne funkcjonalności 47 ==> leczenie_leki_genetyczne=Tak 47    <conf:(1)> lift:(1.16) lev:(0.07) [6] conv:(6.36)
+10. ingerencja_geny=Tak predyspozycje_genetyczne=Tak swiadomosc_korzysci_ai=Tak 47 ==> leczenie_leki_genetyczne=Tak 47    <conf:(1)> lift:(1.16) lev:(0.07) [6] conv:(6.36)
+11. przewidywanie_stan_zdrowia=Tak swiadomosc_korzysci_ai=Tak telemedycyna=Jako uzupełnienie tradycyjnych form opieki medycznej 47 ==> leczenie_leki_genetyczne=Tak 47    <conf:(1)> lift:(1.16) lev:(0.07) [6] conv:(6.36)
+12. ingerencja_geny=Tak wieksza_zaplata_zabieg=Zapłacić więcej za nowsze, bardziej precyzyjne technologie stosowanie_urzadzen=Tak 46 ==> leczenie_leki_genetyczne=Tak 46    <conf:(1)> lift:(1.16) lev:(0.06) [6] conv:(6.23)
+13. ingerencja_geny=Tak stosowanie_urzadzen=Tak swiadomosc_korzysci_ai=Tak 46 ==> leczenie_leki_genetyczne=Tak 46    <conf:(1)> lift:(1.16) lev:(0.06) [6] conv:(6.23)
+14. ingerencja_geny=Tak swiadomosc_korzysci_ai=Tak telemedycyna=Jako uzupełnienie tradycyjnych form opieki medycznej 46 ==> leczenie_leki_genetyczne=Tak 46    <conf:(1)> lift:(1.16) lev:(0.06) [6] conv:(6.23)
+15. ingerencja_geny=Tak dane_czujniki_spersonalizowanie=Tak wieksza_zaplata_zabieg=Zapłacić więcej za nowsze, bardziej precyzyjne technologie swiadomosc_korzysci_ai=Tak 46 ==> leczenie_leki_genetyczne=Tak 46    <conf:(1)> lift:(1.16) lev:(0.06) [6] conv:(6.23)
+16. ingerencja_geny=Tak opiekun_robot_czlowiek=Spersonalizowany robot dostępny całodobowo posiadający wszystkie konieczne funkcjonalności wieksza_zaplata_zabieg=Zapłacić więcej za nowsze, bardziej precyzyjne technologie 45 ==> leczenie_leki_genetyczne=Tak 45    <conf:(1)> lift:(1.16) lev:(0.06) [6] conv:(6.09)
+17. ingerencja_geny=Tak koszulka_smart=Tak swiadomosc_korzysci_ai=Tak 45 ==> leczenie_leki_genetyczne=Tak 45    <conf:(1)> lift:(1.16) lev:(0.06) [6] conv:(6.09)
+18. ingerencja_geny=Tak swiadomosc_korzysci_ai=Tak age_bins=(17, 27] 45 ==> leczenie_leki_genetyczne=Tak 45    <conf:(1)> lift:(1.16) lev:(0.06) [6] conv:(6.09)
+19. wspomaganie_innowacji=Tak ingerencja_geny=Tak dane_czujniki_spersonalizowanie=Tak swiadomosc_korzysci_ai=Tak 45 ==> leczenie_leki_genetyczne=Tak 45    <conf:(1)> lift:(1.16) lev:(0.06) [6] conv:(6.09)
+20. wspomaganie_innowacji=Tak ingerencja_geny=Tak wieksza_zaplata_zabieg=Zapłacić więcej za nowsze, bardziej precyzyjne technologie swiadomosc_korzysci_ai=Tak 45 ==> leczenie_leki_genetyczne=Tak 45    <conf:(1)> lift:(1.16) lev:(0.06) [6] conv:(6.09)
+
