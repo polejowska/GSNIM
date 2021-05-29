@@ -1,4 +1,4 @@
-<img src="website/templates/img/ai.png" align="right">
+<img src="website/templates/img/ai.png" align="right" width="200">
 
 # Society readiness for innovative technologies in medicine - Questionnaire
 
