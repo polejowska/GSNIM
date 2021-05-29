@@ -7,7 +7,7 @@ import os
 TEMPLATE_DIR = os.path.abspath('../templates')
 STATIC_DIR = os.path.abspath('../static')
 
-# FETCH ALL QUESTIONS AND OPTIONS FROM DATABASE
+# FETCH ALL QUESTIONS AND OPTIONS FROM THE DATABASE
 questions_objects_list = Question.query.all()
 options_objects_list = Option.query.all()
 

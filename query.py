@@ -1,9 +1,14 @@
+"""Testing queries
+
+This script allows to query the database in order to test specific queries.
+
+"""
+
 from website import db
 from website.models import Respondent, Question, Option, Answer
 
 
 # TESTING QUERIES
-
 # questions = Question.query.all()
 # print(questions[0].text)
 

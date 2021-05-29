@@ -1,7 +1,11 @@
+"""Basic operations on the database
+
+This script allows to change the questions and possible, create the database and perform operations on the created database.
+
+"""
+
 from website import db
 from website.models import Respondent, Question, Option, Answer
-
-
 
 
 questions_options_experience = [
@@ -38,27 +42,21 @@ questions_options_expectations = [
 # WARNING! DELETING ENTIRE DATABASE
 db.drop_all()
 
+# CREATE DATABASE
 db.create_all()
 
-# CONSTANT DATA IN DATABASE
-
+# CONSTANT DATA IN DATABASE 
 q1 = Question(text=questions_options_experience[0][0])
 q2 = Question(text=questions_options_experience[1][0])
 q21 = Question(text=questions_options_experience[2][0])
-
-
 q3 = Question(text=questions_options_fears[0][0])
 q4 = Question(text=questions_options_fears[1][0])
 q5 = Question(text=questions_options_fears[2][0])
-
-
 q6 = Question(text=questions_options_knowledge[0][0])
 q7 = Question(text=questions_options_knowledge[1][0])
 q8 = Question(text=questions_options_knowledge[2][0])
 q9 = Question(text=questions_options_knowledge[3][0])
 q10 = Question(text=questions_options_knowledge[4][0])
-
-
 q11 = Question(text=questions_options_expectations[0][0])
 q12 = Question(text=questions_options_expectations[1][0])
 q13 = Question(text=questions_options_expectations[2][0])
@@ -68,175 +66,127 @@ q16 = Question(text=questions_options_expectations[5][0])
 q17 = Question(text=questions_options_expectations[6][0])
 q18 = Question(text=questions_options_expectations[7][0])
 
-
 o1 = Option(number=1, option_text=questions_options_experience[0][1][0], question_assigned=q1)
 o1_1 = Option(number=2, option_text=questions_options_experience[0][1][1], question_assigned=q1)
 o1_2 = Option(number=3, option_text=questions_options_experience[0][1][2], question_assigned=q1)
-
 o21 = Option(number=1, option_text=questions_options_experience[2][1][0], question_assigned=q21)
 o21_1 = Option(number=2, option_text=questions_options_experience[2][1][1], question_assigned=q21)
-
 o2 = Option(number=1, option_text=questions_options_experience[1][1][0], question_assigned=q2)
 o2_1 = Option(number=2, option_text=questions_options_experience[1][1][1], question_assigned=q2)
-
-
 o3 = Option(number=1, option_text=questions_options_fears[0][1][0], question_assigned=q3)
 o3_1 = Option(number=2, option_text=questions_options_fears[0][1][1], question_assigned=q3)
-
 o4 = Option(number=1, option_text=questions_options_fears[1][1][0], question_assigned=q4)
 o4_1 = Option(number=2, option_text=questions_options_fears[1][1][1], question_assigned=q4)
-
 o5 = Option(number=1, option_text=questions_options_fears[2][1][0], question_assigned=q5)
 o5_1 = Option(number=2, option_text=questions_options_fears[2][1][1], question_assigned=q5)
-
-
 o6 = Option(number=1, option_text=questions_options_knowledge[0][1][0], question_assigned=q6)
 o6_1 = Option(number=2, option_text=questions_options_knowledge[0][1][1], question_assigned=q6)
-
 o7 = Option(number=1, option_text=questions_options_knowledge[1][1][0], question_assigned=q7)
 o7_1 = Option(number=2, option_text=questions_options_knowledge[1][1][1], question_assigned=q7)
-
 o8 = Option(number=1, option_text=questions_options_knowledge[2][1][0], question_assigned=q8)
 o8_1 = Option(number=2, option_text=questions_options_knowledge[2][1][1], question_assigned=q8)
 o8_2 = Option(number=3, option_text=questions_options_knowledge[2][1][2], question_assigned=q8)
 o8_3 = Option(number=4, option_text=questions_options_knowledge[2][1][3], question_assigned=q8)
-
 o9 = Option(number=1, option_text=questions_options_knowledge[3][1][0], question_assigned=q9)
 o9_1 = Option(number=2, option_text=questions_options_knowledge[3][1][1], question_assigned=q9)
-
 o10 = Option(number=1, option_text=questions_options_knowledge[4][1][0], question_assigned=q10)
 o10_1 = Option(number=2, option_text=questions_options_knowledge[4][1][1], question_assigned=q10)
 o10_2 = Option(number=3, option_text=questions_options_knowledge[4][1][2], question_assigned=q10)
-
-
 o11 = Option(number=1, option_text=questions_options_expectations[0][1][0], question_assigned=q11)
 o11_1 = Option(number=2, option_text=questions_options_expectations[0][1][1], question_assigned=q11)
-
 o12 = Option(number=1, option_text=questions_options_expectations[1][1][0], question_assigned=q12)
 o12_1 = Option(number=2, option_text=questions_options_expectations[1][1][1], question_assigned=q12)
-
 o13 = Option(number=1, option_text=questions_options_expectations[2][1][0], question_assigned=q13)
 o13_1 = Option(number=2, option_text=questions_options_expectations[2][1][1], question_assigned=q13)
-
 o14 = Option(number=1, option_text=questions_options_expectations[3][1][0], question_assigned=q14)
 o14_1 = Option(number=2, option_text=questions_options_expectations[3][1][1], question_assigned=q14)
-
 o15 = Option(number=1, option_text=questions_options_expectations[4][1][0], question_assigned=q15)
 o15_1 = Option(number=2, option_text=questions_options_expectations[4][1][1], question_assigned=q15)
-
 o16 = Option(number=1, option_text=questions_options_expectations[5][1][0], question_assigned=q16)
 o16_1 = Option(number=2, option_text=questions_options_expectations[5][1][1], question_assigned=q16)
-
 o17 = Option(number=1, option_text=questions_options_expectations[6][1][0], question_assigned=q17)
 o17_1 = Option(number=2, option_text=questions_options_expectations[6][1][1], question_assigned=q17)
-
 o18 = Option(number=1, option_text=questions_options_expectations[7][1][0], question_assigned=q18)
 o18_1 = Option(number=2, option_text=questions_options_expectations[7][1][1], question_assigned=q18)
-
-
 #o4 = Option(number=1, option_text=questions_options[3][1][0], question_assigned=q4)
 #o4_1 = Option(number=2, option_text=questions_options[3][1][1], question_assigned=q4)
 #o4_2 = Option(number=3, option_text=questions_options[3][1][2], question_assigned=q4)
 
 
 # ADD TO DATABASE
-
 db.session.add(q1)
 db.session.add(o1)
 db.session.add(o1_1)
 db.session.add(o1_2)
-
 db.session.add(q2)
 db.session.add(o2)
 db.session.add(o2_1)
-
 db.session.add(q21)
 db.session.add(o21)
 db.session.add(o21_1)
 
-
 db.session.commit()
-
 
 db.session.add(q3)
 db.session.add(o3)
 db.session.add(o3_1)
-
 db.session.add(q4)
 db.session.add(o4)
 db.session.add(o4_1)
-
 db.session.add(q5)
 db.session.add(o5)
 db.session.add(o5_1)
 
-
 db.session.commit()
-
 
 db.session.add(q6)
 db.session.add(o6)
 db.session.add(o6_1)
-
 db.session.add(q7)
 db.session.add(o7)
 db.session.add(o7_1)
-
 db.session.add(q8)
 db.session.add(o8)
 db.session.add(o8_1)
 db.session.add(o8_2)
-
 db.session.add(q9)
 db.session.add(o9)
 db.session.add(o9_1)
-
 db.session.add(q10)
 db.session.add(o10)
 db.session.add(o10_1)
 db.session.add(o10_2)
 
-
 db.session.commit()
-
 
 db.session.add(q11)
 db.session.add(o11)
 db.session.add(o11_1)
-
 db.session.add(q12)
 db.session.add(o12)
 db.session.add(o12_1)
-
 db.session.add(q13)
 db.session.add(o13)
 db.session.add(o13_1)
-
 db.session.add(q14)
 db.session.add(o14)
 db.session.add(o14_1)
-
 db.session.add(q15)
 db.session.add(o15)
 db.session.add(o15_1)
-
 db.session.add(q16)
 db.session.add(o16)
 db.session.add(o17_1)
-
 db.session.add(q17)
 db.session.add(o17)
 db.session.add(o17_1)
-
 db.session.add(q18)
 db.session.add(o18)
 db.session.add(o18_1)
 
-
 db.session.commit()
 
 # DYNAMIC DATA (EXAMPLE)
-
 r1 = Respondent(age=22, gender=1, med_education=True, place=1)
 r2 = Respondent(age=20, gender=2, med_education=False, place=2)
 
