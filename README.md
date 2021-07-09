@@ -17,6 +17,8 @@ The project was developed for the following university subjects:
 * Bootstrap
 
 
+### Gathered data analysis and exploration
+The data that has been gathered in a purposefully created database has been explored and carefoully analyzed using machine learning algorithms. The data exploration part of the project in a seprate repository. https://github.com/AgataPolejowska/MDTA
 
 
 ### Status
