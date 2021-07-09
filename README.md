@@ -21,3 +21,6 @@ The project was developed for the following university subjects:
 
 ### Status
 The project is completed.
+
+### Movie
+I invite you to watch a specially prepared movie that in an immersive way reflects what have been done in this project. The movie has been created by me and is prepared in Polish langauge. https://drive.google.com/file/d/1Ul7ZV-lLdH69iVPDxkHTRswhE-CjlUyp/view
